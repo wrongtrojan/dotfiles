@@ -1,0 +1,141 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "background": "#282a36",
+    "foreground": "#f8f8f2",
+    "selection": "#44475a",
+    "comment": "#6272a4",
+    "cyan": "#8be9fd",
+    "green": "#50fa7b",
+    "orange": "#ffb86c",
+    "pink": "#ff79c6",
+    "purple": "#bd93f9",
+    "red": "#ff5555",
+    "yellow": "#f1fa8c",
+    "black": "#21222c",
+    "white": "#f8f8f2"
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:comment",
+          "template": "\u250c"
+        },
+        {
+          "type": "os",
+          "style": "plain",
+          "background": "p:selection",
+          "foreground": "p:cyan",
+          "template": " {{.Icon}}\u2800"
+        },
+        {
+          "type": "shell",
+          "style": "plain",
+          "background": "p:purple",
+          "foreground": "p:black",
+          "template": "\u276f \uf489 {{.Name}}\u2800"
+        },
+        {
+          "type": "session",
+          "style": "plain",
+          "background": "p:pink",
+          "background_templates": [
+            "{{ if .Root }}p:red{{ end }}"
+          ],
+          "foreground": "p:black",
+          "template": "\u276f \uf2c0 {{.HostName}}\u2800"
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "background": "p:comment",
+          "foreground": "p:white",
+          "options": {
+            "branch_icon": "\ue725 ",
+            "fetch_status": true
+          },
+          "template": "<p:cyan>\u276f</> {{ .HEAD }}<p:selection> </>{{ if or .Working.Changed .Staging.Changed }}<p:orange>\ue65d</> {{ if .Working.Changed }}<p:pink>\uf044</>{{ end }} {{ if .Staging.Changed }}<p:green>\uf046</>{{ end }} </>{{ end }}"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "battery",
+          "style": "plain",
+          "foreground": "p:green",
+          "foreground_templates": [
+            "{{if le .Percentage 20}}p:red{{end}}",
+            "{{if le .Percentage 50}}p:yellow{{end}}"
+          ],
+          "template": "<p:comment>\ue621</> \uf241 {{.Percentage}}% "
+        },
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "foreground": "p:yellow",
+          "options": { "style": "austin", "threshold": 0 },
+          "template": "<p:comment>\ue621</> \uf252 {{.FormattedMs}} "
+        },
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "p:cyan",
+          "options": { "time_format": "15:04" },
+          "template": "<p:comment>\ue621</> \uf017 {{.CurrentDate | date .Format}} "
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "path",
+          "style": "plain",
+          "background": "transparent",
+          "foreground": "p:comment",
+          "options": {
+            "folder_icon": "\uf07b",
+            "home_icon": "\ueb06",
+            "style": "agnoster",
+            "folder_separator_template": "<p:purple> \u00bb </>"
+          },
+          "template": "\u2514\u276f <p:cyan>[ {{.Path}} ]</>"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "status",
+          "style": "plain",
+          "background": "transparent",
+          "foreground": "p:green",
+          "foreground_templates": [
+            "{{if gt .Code 0}}p:red{{end}}"
+          ],
+          "options": {
+            "always_enabled": true
+          },
+          "template": "\u276f"
+        }
+      ]
+    }
+  ],
+  "console_title_template": "{{if .Root}}[root] {{end}}{{.Shell}} in <{{.Folder}}>",
+  "final_space": true,
+  "version": 4
+}

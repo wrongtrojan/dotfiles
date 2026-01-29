@@ -1,0 +1,165 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "keybindings": 
+    [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.FindText",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "launchMode": "maximized",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "backgroundImageStretchMode": "uniformToFill",
+            "colorScheme": "Dracula",
+            "opacity": 85,
+            "useAcrylic": true
+        },
+        "list": 
+        [
+            {
+                "backgroundImage": "D:\\WallPaper\\\u5fb7\u53e4\u62c9.png",
+                "backgroundImageOpacity": 0.3,
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nologo",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "backgroundImage": "D:\\WallPaper\\\u5fb7\u53e4\u62c9.png",
+                "backgroundImageOpacity": 0.3,
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "\u547d\u4ee4\u63d0\u793a\u7b26"
+            },
+            {
+                "backgroundImage": "D:\\WallPaper\\\u5fb7\u53e4\u62c9.png",
+                "backgroundImageOpacity": 0.3,
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "backgroundImage": "D:\\WallPaper\\\u5fb7\u53e4\u62c9.png",
+                "backgroundImageOpacity": 0.3,
+                "guid": "{c411cd50-766f-5f06-bfd8-8b3ae53acf08}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "backgroundImage": "D:\\WallPaper\\\u5fb7\u53e4\u62c9.png",
+                "backgroundImageOpacity": 0.3,
+                "guid": "{832a43b2-4054-51c2-bfea-a627ca15adff}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "backgroundImage": "D:\\WallPaper\\\u5fb7\u53e4\u62c9.png",
+                "backgroundImageOpacity": 0.3,
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{2292881d-c2d1-59f8-9958-ac7e008f40ad}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "backgroundImage": "D:\\WallPaper\\\u5fb7\u53e4\u62c9.png",
+                "backgroundImageOpacity": 1,
+                "colorScheme": "Dracula",
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -nologo",
+                "cursorColor": "#8BE9FD",
+                "cursorShape": "filledBox",
+                "font": 
+                {
+                    "face": "JetBrainsMono Nerd Font Mono"
+                },
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "scrollbarState": "visible",
+                "source": "Windows.Terminal.PowershellCore",
+                "startingDirectory": "C:\\Users\\24051\\Desktop",
+                "suppressApplicationTitle": true,
+                "tabTitle": "Trojan"
+            },
+            {
+                "backgroundImage": "D:\\WallPaper\\\u5361\u5e03\u5947\u8f9b.png",
+                "backgroundImageOpacity": 1,
+                "commandline": "pwsh.exe",
+                "font": 
+                {
+                    "face": "JetBrainsMono Nerd Font Mono"
+                },
+                "guid": "{b043c94a-8758-4444-b0cf-5f80b91d31a5}",
+                "name": "Fastfetch-Board",
+                "opacity": 85,
+                "useAcrylic": false
+            }
+        ]
+    },
+    "rendering.graphicsAPI": "direct3d11",
+    "schemes": 
+    [
+        {
+            "background": "#282A36",
+            "black": "#21222C",
+            "blue": "#BD93F9",
+            "brightBlack": "#6272A4",
+            "brightBlue": "#D6ACFF",
+            "brightCyan": "#A4FFFF",
+            "brightGreen": "#69FF94",
+            "brightPurple": "#FF92DF",
+            "brightRed": "#FF6E6E",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFFA5",
+            "cursorColor": "#F8F8F2",
+            "cyan": "#8BE9FD",
+            "foreground": "#F8F8F2",
+            "green": "#50FA7B",
+            "name": "Dracula",
+            "purple": "#FF79C6",
+            "red": "#FF5555",
+            "selectionBackground": "#44475A",
+            "white": "#F8F8F2",
+            "yellow": "#F1FA8C"
+        }
+    ],
+    "startupActions": "new-tab -p \"PowerShell\" pwsh.exe -NoExit -Command spf;split-pane -p \"Fastfetch-Board\" -v -s 0.5 pwsh.exe -Command Lock-FastFetch ; focus-pane -t 1;split-pane -p \"PowerShell\" -t -s 0.7 pwsh.exe -NoExit -Command top;focus-pane -t 0",
+    "theme": "dark",
+    "themes": [],
+    "useAcrylicInTabRow": true
+}

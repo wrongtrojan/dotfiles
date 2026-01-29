@@ -1,0 +1,77 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "small",
+        "padding": {
+            "top": 3,    
+            "left": 10,
+            "right": 0
+        },
+        "width": 10,      // 固定宽度，强制右侧文字对齐
+        "height": 8
+    },
+    "display": {
+        "separator": " ➜ ",
+        "key": {
+            "width": 10  
+        }
+    },
+    "modules": [
+        {
+            "type": "custom",
+            "format": " "
+        },
+        {
+            "type": "custom",
+            "format": " "
+        },
+        // {
+        //     "type": "title",
+        //     "format": "{1}@{2}", // 保持标题
+        //     "outputColor": "34"
+        // },
+        {
+            "type": "colors",
+            "symbol": "circle"
+        },
+        {
+            "type": "custom",
+            "format": "────────────────────────────────────────────", 
+            "outputColor": "90"
+        },
+        {
+            "type": "os",
+            "key": "󰍲 OS",
+            "format": "{2} {8}"
+        },
+        {
+            "type": "shell",
+            "key": "󰞷 Sh"
+        },
+        {
+            "type": "memory",
+            "key": "󰍛 Mem",
+            "format": "{1} / {2}"
+        },
+        {
+            "type": "kernel",
+            "key": "󰟆 Ker"
+        },
+        {
+            "type": "cpu",
+            "key": "󰻠 CPU",
+            "format": "{1}"
+        },
+        {
+            "type": "gpu",
+            "key": "󰢮 GPU",
+            "format": "{2}",
+            "hideType": "integrated" 
+        },
+        {
+            "type": "custom",
+            "format": "────────────────────────────────────────────", 
+            "outputColor": "90"
+        }
+    ]
+}
